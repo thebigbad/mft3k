@@ -1,18 +1,20 @@
 <?xml version="1.0"?>
 <xbl:bindings xmlns:xbl="http://www.mozilla.org/xbl"
-    xmlns:html="http://www.w3.org/1999/xhtml">
+    xmlns="http://www.w3.org/1999/xhtml">
   <xbl:binding id="seats" inheritstyle="false">
     <xbl:resources>
       <xbl:stylesheet src="chrome://mft3k/skin/stylesheets/stylesheet.css" />
     </xbl:resources>
     <xbl:content>
       <xbl:children includes="head" />
-      <html:body id="stack">
-        <html:div id="page">
+      <body id="stack">
+        <div id="page">
           <xbl:children />
-        </html:div>
-        <html:div id="seats" />
-      </html:body>
+        </div>
+        <div id="seats">
+          <div id="test" />
+        </div>
+      </body>
     </xbl:content>
   </xbl:binding>
 </xbl:bindings>
