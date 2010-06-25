@@ -1,0 +1,6 @@
+content mft3k chrome/content/
+content mft3k chrome/content/ contentaccessible=yes
+locale  mft3k en-US locale/en-US/
+skin    mft3k classic/1.0 chrome/skin/
+resource mft3k chrome/modules/
+overlay chrome://browser/content/browser.xul chrome://mft3k/content/browser.xul

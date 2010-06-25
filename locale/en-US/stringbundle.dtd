@@ -1,0 +1,7 @@
+<!-- See: https://developer.mozilla.org/en/Localizing_an_extension -->
+<!ENTITY mft3k.menu.title "mft3k">
+<!ENTITY mft3k.menu.item "Say Hi">
+
+<!ENTITY mft3k.about "mft3k">
+<!ENTITY mft3k.about.close "close">
+
