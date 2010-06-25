@@ -12,7 +12,8 @@
           <xbl:children />
         </div>
         <div id="seats">
-          <div id="test" />
+          <div id="empty" />
+          <div id="occupied" usemap="#hecklers" />
         </div>
       </body>
     </xbl:content>

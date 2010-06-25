@@ -14,17 +14,26 @@
 
 #seats {
   position: fixed;
-  top: 0;
+  bottom: 0;
   left: 0;
-  height: 100%;
+  height: 90px;
   width: 100%;
 }
 
-#test {
-  position: fixed;
+#empty {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 248px;
+  height: 90px;
+  background: url("chrome://mft3k/skin/images/empty.png") right bottom repeat-x;
+}
+
+#occupied {
+  position: absolute;
   bottom: 0;
   right: 0;
-  height: 100px;
-  width: 100px;
-  background-color: red;
+  width: 248px;
+  height: 90px;
+  background: url("chrome://mft3k/skin/images/occupied.png");
 }
