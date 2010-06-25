@@ -1,15 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/css"
-    href="chrome://mft3k/skin/stylesheets/stylesheet.css" ?>
-<!DOCTYPE overlay SYSTEM "chrome://mft3k/locale/stringbundle.dtd">
 <overlay xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
   <script type="application/x-javascript"
       src="chrome://mft3k/content/content.js" />
-  <menubar id="main-menubar">
-    <menu label="&mft3k.menu.title;" insertbefore="tools-menu">
-      <menupopup>
-        <menuitem label="&mft3k.menu.item;" oncommand="alert('Hello World!');"/>
-      </menupopup>
-    </menu>
-  </menubar>
 </overlay>
