@@ -1,7 +1,7 @@
-mft3k - a Barebones Extension For Firefox, Ya'll
+Mystery Firefox Theater 3000
 ============
 
-A basic Firefox extension with a menu item, for copying and pasting into new projects.
+Adds a MST3K row of seats to the bottom of the browser, as a fun demonstration of a technique for overlay pages.
 
 For Development
 ============
@@ -12,7 +12,7 @@ Like they say in the [good book](https://developer.mozilla.org/en/Setting_up_ext
 
 ...and create a file named:
 
-    mft3k@thebigbad.github.com
+    rwolf+mft3k@borderstylo.com
 
 Inside that file, write the path of this project (making sure it ends in slash).
 
