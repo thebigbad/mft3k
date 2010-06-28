@@ -22,3 +22,8 @@ For Sharing
     make
 
 ... and open mft3k.xpi in Firefox
+
+License
+===========
+
+Copyright (c) 2010, Border Stylo. All rights reserved. See LICENSE for details.
