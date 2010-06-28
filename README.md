@@ -1,9 +1,7 @@
 Mystery Firefox Theater 3000
 ============
 
-Adds a MST3K row of seats to the bottom of the browser, as a fun demonstration of a technique for overlay pages.
-
-![Screenshot of Extension](http://github.com/thebigbad/mft3k/blob/master/screenshot.png)
+Adds a MST3K row of seats to the bottom of the browser, as a fun demonstration of a technique for overlay pages. [Screenshot](http://github.com/thebigbad/mft3k/blob/master/screenshot.png)
 
 For Users
 ===========
