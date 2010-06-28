@@ -12,7 +12,7 @@ Like they say in the [good book](https://developer.mozilla.org/en/Setting_up_ext
 
 ...and create a file named:
 
-    rwolf+mft3k@borderstylo.com
+    mft3k@borderstylo.com
 
 Inside that file, write the path of this project (making sure it ends in slash).
 
