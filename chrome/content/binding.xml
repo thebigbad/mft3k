@@ -2,10 +2,6 @@
 <xbl:bindings xmlns:xbl="http://www.mozilla.org/xbl"
     xmlns="http://www.w3.org/1999/xhtml">
   <xbl:binding id="seats" inheritstyle="false">
-<?xml version="1.0"?>
-<xbl:bindings xmlns:xbl="http://www.mozilla.org/xbl"
-    xmlns="http://www.w3.org/1999/xhtml">
-  <xbl:binding id="seats" inheritstyle="false">
     <xbl:resources>
       <xbl:stylesheet src="chrome://mft3k/skin/stylesheets/stylesheet.css" />
     </xbl:resources>
@@ -17,7 +13,7 @@
         </div>
         <div id="seats">
           <div id="empty" />
-          <div id="occupied" onclick="javascript:heckle_site();" />
+          <div id="occupied" onclick="javascript:heckle_site(this);" />
         </div>
       </body>
     </xbl:content>
@@ -35,7 +31,7 @@
             [ crow, "They must've spent tens of dollars on this." ],
             [ joel, "I think the prop department juuust ran out of money." ],
             [ tom, "I bet this was made in Canada." ],
-            [ joel, "I'll bet this site uses -moz-bindings" ],
+            [ joel, "I'll bet this site uses -moz-binding" ],
             [ joel, "Yeah." ],
             [ crow, "I know I'll never be quite the same." ],
             [ joel, "This XBL is history." ],
