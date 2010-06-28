@@ -25,7 +25,7 @@ Inside that file, write the path of this project (making sure it ends in slash).
 Thanks
 ==========
 
-* (Mike Kaply)[https://twitter.com/MikeKaply] for taking in interest in my work and encouraging me to share it.
+* [Mike Kaply](https://twitter.com/MikeKaply) for taking in interest in my work and encouraging me to share it.
 * Mitchell Johnson for hacking out some funny code and suggesting the name.
 
 License
