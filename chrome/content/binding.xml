@@ -2,6 +2,10 @@
 <xbl:bindings xmlns:xbl="http://www.mozilla.org/xbl"
     xmlns="http://www.w3.org/1999/xhtml">
   <xbl:binding id="seats" inheritstyle="false">
+<?xml version="1.0"?>
+<xbl:bindings xmlns:xbl="http://www.mozilla.org/xbl"
+    xmlns="http://www.w3.org/1999/xhtml">
+  <xbl:binding id="seats" inheritstyle="false">
     <xbl:resources>
       <xbl:stylesheet src="chrome://mft3k/skin/stylesheets/stylesheet.css" />
     </xbl:resources>
@@ -13,9 +17,71 @@
         </div>
         <div id="seats">
           <div id="empty" />
-          <div id="occupied" usemap="#hecklers" />
+          <div id="occupied" onclick="javascript:heckle_site();" />
         </div>
       </body>
     </xbl:content>
+    <xbl:implementation>
+      <xbl:constructor><![CDATA[
+        /*
+          This constructor adds the speech bubbles, it has nothing directly to
+          do with the stack hack
+        */
+        var tom = 215 ;
+        var joel = 145 ;
+        var crow = 80 ;
+        hecklers = {
+          text: [
+            [ crow, "They must've spent tens of dollars on this." ],
+            [ joel, "I think the prop department juuust ran out of money." ],
+            [ tom, "I bet this was made in Canada." ],
+            [ joel, "I'll bet this site uses -moz-bindings" ],
+            [ joel, "Yeah." ],
+            [ crow, "I know I'll never be quite the same." ],
+            [ joel, "This XBL is history." ],
+            [ crow, "We're history." ],
+            [ crow, "Hey! Is this From Here to Eternity?" ],
+            [ tom, "No, it just seems like an eternity." ],
+            [ tom, "It is sort of hypnotic, isn't it?" ],
+            [ crow, "Hip? Not. Ick!" ]
+          ],
+          bubble: null,
+          fin: null,
+          timeout: null
+        } ;
+        hecklers.index = Math.floor(Math.random() * hecklers.text.length),
+
+        heckle_site = function (heckler_node) {
+          var doc = heckler_node.ownerDocument ;
+          var text = hecklers.text[hecklers.index] ;
+          var remove = function () {
+            if (hecklers.bubble) {
+              heckler_node.removeChild(hecklers.bubble) ;
+              heckler_node.removeChild(hecklers.fin) ;
+              hecklers.bubble = null ;
+              hecklers.fin = null ;
+            }
+          } ;
+
+          hecklers.index = (hecklers.index + 1) % hecklers.text.length ;
+          remove() ;
+
+          hecklers.bubble = doc.createElement('div') ;
+          hecklers.fin = doc.createElement('div') ;
+          hecklers.bubble.id = "speechbubble" ;
+          hecklers.bubble.innerHTML = text[1] ;
+          hecklers.bubble.style.right = text[0] + "px" ;
+          hecklers.fin.id = "speechbubblefin" ;
+          hecklers.fin.style.right = (text[0] + 10) + "px" ;
+          heckler_node.appendChild(hecklers.bubble) ;
+          heckler_node.appendChild(hecklers.fin) ;
+          if (hecklers.timeout) {
+            window.clearTimeout(hecklers.timeout) ;
+            hecklers.timeout = null ;
+          }
+          hecklers.timeout = window.setTimeout(remove, 10000) ;
+        } ;
+      ]]></xbl:constructor>
+    </xbl:implementation>
   </xbl:binding>
 </xbl:bindings>
