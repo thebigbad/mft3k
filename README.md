@@ -3,16 +3,17 @@ Mystery Firefox Theater 3000
 
 Adds a MST3K row of seats to the bottom of the browser, as a fun demonstration of a technique for overlay pages.
 
+![Screenshot of Extension](http://github.com/thebigbad/mft3k/blob/master/screenshot.png)
+
 For Users
 ===========
 
 Head to the [download](http://github.com/thebigbad/mft3k/downloads) page and install the xpi.
 
-
 For Developers
 ============
 
-Like they say in the [good book](https://developer.mozilla.org/en/Setting_up_extension_development_environment#Firefox_extension_proxy_file), navigate to:
+After cloning, do as they say in the [good book](https://developer.mozilla.org/en/Setting_up_extension_development_environment#Firefox_extension_proxy_file), navigate to:
 
     ~/.mozilla/firefox/$PROFILE_NAME/extensions
 
@@ -31,4 +32,4 @@ Thanks
 License
 ===========
 
-Copyright (c) 2010, Border Stylo. All rights reserved. See LICENSE for details.
+Copyright (c) 2010, [Border Stylo](http://borderstylo.com/). All rights reserved. See [LICENSE](http://github.com/thebigbad/mft3k/blob/master/LICENSE) for details.
