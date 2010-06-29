@@ -15,7 +15,7 @@
     </em:targetApplication>
     <em:aboutURL>chrome://mft3k/content/about.xul</em:aboutURL>
     <em:creator>Ryan Wolf</em:creator>
-    <em:description>Barebones Extension For Firefox, Ya'll</em:description>
+    <em:description>Mystery Firefox Theater 3000</em:description>
     <em:homepageURL>http://github.com/thebigbad/mft3k</em:homepageURL>
   </Description>
 </RDF>
