@@ -9,8 +9,15 @@ window.addEventListener(
         // don't add binding to frames
         if (doc.defaultView.frameElement) return;
 
-        var bindingUrl = 'url("chrome://mft3k/content/binding.xml#seats")';
-        doc.body.parentNode.style.MozBinding = bindingUrl;
+        var styleSheetService = Cc["@mozilla.org/content/style-sheet-service;1"].
+            getService(Ci.nsIStyleSheetService);
+        var IOService = Cc["@mozilla.org/network/io-service;1"].
+            getService(Ci.nsIIOService);
+        var flashHackURI = IOService.
+            newURI("chrome://mft3k/skin/stylesheets/binding.css", null, null);
+        var type = styleSheetService.USER_SHEET;
+        styleSheetService.
+            loadAndRegisterSheet(flashHackURI, styleSheetService.USER_SHEET);
       },
       false
     );

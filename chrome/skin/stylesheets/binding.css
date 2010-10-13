@@ -1,0 +1,3 @@
+html {
+  -moz-binding: url("chrome://mft3k/content/binding.xml#seats") !important;
+}
