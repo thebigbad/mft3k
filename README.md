@@ -26,6 +26,8 @@ Thanks
 
 * [Mike Kaply](https://twitter.com/MikeKaply) for taking in interest in my work and encouraging me to share it.
 * Mitchell Johnson for hacking out some funny code and suggesting the name.
+* [Nicolas LaCasse](http://github.com/nlacasse) for finding the fix for FF4: https://forums.addons.mozilla.org/viewtopic.php?f=12&t=1437&p=4849#p4849
+* [Lorenzo Colitti](http://www.colitti.com/lorenzo) for answering Nick's question on IRC
 
 License
 ===========
